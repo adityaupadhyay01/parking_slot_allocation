@@ -1,111 +1,135 @@
-# 🚗 Parking Slot Allocation System (Console-Based Prototype in C)
+# 🚗 Parking Slot Allocation System
 
 ## 📌 Overview
 
-This project is a **console-based Parking Slot Allocation System** implemented in **C**.
-It demonstrates how fundamental **Data Structures & Algorithms (DSA)** can be applied to solve a real-world problem — efficient parking management.
+This project is a **full-stack parking management system** that efficiently allocates parking slots using **Data Structures (Arrays & Queue)** implemented in **C**, integrated with a modern web interface.
 
-The system manages parking slots, allocates space to vehicles, and handles overflow using a waiting queue.
-
----
-
-## 🎯 Objective
-
-* Automate parking slot allocation
-* Maintain real-time status of parking slots
-* Enable vehicle entry and exit operations
-* Handle overflow using a queue (FIFO)
+It demonstrates how low-level logic (C) can be combined with web technologies using a **Node.js bridge server**.
 
 ---
 
-## 🧠 Data Structures Used
+## 🧠 Tech Stack
 
-### 1. Array
-
-* Used to store parking slots
-* Each index represents a slot
-* Provides direct access to slot status
-
-### 2. Queue
-
-* Used for waiting vehicles when parking is full
-* Follows **FIFO (First In First Out)** principle
-* Ensures fair allocation
-
-### 3. (Conceptual) Hashing
-
-* Vehicle search is implemented using linear search
-* Can be optimized using a hash table for **O(1)** lookup
+* **Frontend:** HTML, CSS, JavaScript
+* **Backend Bridge:** Node.js (Express)
+* **Core Logic:** C (DSA - Array & Queue)
+* **Storage:** File System (`slots.txt`, `queue.txt`)
 
 ---
 
 ## ⚙️ Features
 
-* Park a vehicle
-* Remove (exit) a vehicle
-* Display parking slot status
-* Display waiting queue
-* Automatic allocation of freed slots to queued vehicles
+* 🚗 Park vehicle (auto slot allocation)
+* 🚪 Exit vehicle (slot reallocation from queue)
+* 📊 Queue management using FIFO
+* 💾 Persistent storage using text files
+* 🌐 Full-stack integration (Web + C backend)
 
 ---
 
-## 🧩 System Workflow
+## 🏗️ Architecture
 
-### Vehicle Entry
-
-1. Vehicle arrives
-2. System checks for free slot
-3. If available → assign slot
-4. If full → add to waiting queue
-
-### Vehicle Exit
-
-1. Vehicle exits
-2. Slot is freed
-3. Next vehicle from queue gets assigned
+```
+Frontend (HTML/JS)
+        ↓
+Node.js Server (Express)
+        ↓
+C Engine (parking.c)
+        ↓
+File System (slots.txt / queue.txt)
+```
 
 ---
 
-## ⏱️ Time Complexity
+## 📂 Project Structure
 
-| Operation        | Time Complexity |
-| ---------------- | --------------- |
-| Slot Allocation  | O(n)            |
-| Vehicle Search   | O(n)            |
-| Queue Operations | O(1)            |
-| Exit Operation   | O(n)            |
+```
+parking-slot-allocation/
+│
+├── backend/          # Node.js server
+│   ├── server.js
+│   ├── package.json
+│
+├── c_engine/         # C logic (DSA)
+│   ├── parking.c
+│
+├── data/             # Storage
+│   ├── slots.txt
+│   ├── queue.txt
+│
+├── frontend/         # UI
+│   ├── index.html
+│   ├── script.js
+│   ├── style.css
+│
+├── README.md
+├── .gitignore
+```
 
 ---
 
-## 🚀 Future Scope
+## 🚀 How to Run Locally
 
-* Implement **hash table** for faster vehicle lookup
-* Add **GUI (Graphical Interface)**
-* Integrate **IoT sensors** for real-time parking detection
-* Develop a **mobile app for smart parking**
-* Add **online reservation system**
-
----
-
-## 🖥️ How to Run
-
-### Step 1: Compile the program
+### 1️⃣ Compile C Program
 
 ```bash
+cd c_engine
 gcc parking.c -o parking
 ```
 
-### Step 2: Run the executable
+---
+
+### 2️⃣ Start Backend Server
 
 ```bash
-./parking
+cd backend
+npm install
+node server.js
 ```
 
 ---
 
-## 💡 Sample Menu
+### 3️⃣ Run Frontend
+
+Open:
 
 ```
-1. Park Vehicle
-2. Exit
+frontend/index.html
 ```
+
+---
+
+## 🧪 Example Workflow
+
+1. Enter vehicle number
+2. Click **Park** → Allocates slot
+3. Click **Exit** → Frees slot & assigns from queue
+
+---
+
+## ⚠️ Important Notes
+
+* Do **not** upload compiled `.exe` file (compile locally)
+* Ensure correct file paths for C execution
+* Backend must be running before using frontend
+
+---
+
+## 💡 Key Learning Outcomes
+
+* Integration of **low-level C logic with web applications**
+* Understanding **process execution using Node.js (child_process)**
+* Practical implementation of **Queue (FIFO)** and Arrays
+* Real-world system design thinking
+
+---
+
+## 📸 (Optional)
+
+*Add screenshots or demo GIF here*
+
+---
+
+## 📜 License
+
+This project is for educational purposes.
