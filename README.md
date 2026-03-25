@@ -1,6 +1,6 @@
-# 🚗 Parking Slot Allocation System
+# Parking Slot Allocation System
 
-## 📌 Overview
+## Overview
 
 This project is a **full-stack parking management system** that efficiently allocates parking slots using **Data Structures (Arrays & Queue)** implemented in **C**, integrated with a modern web interface.
 
@@ -8,7 +8,7 @@ It demonstrates how low-level logic (C) can be combined with web technologies us
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 * **Frontend:** HTML, CSS, JavaScript
 * **Backend Bridge:** Node.js (Express)
@@ -17,17 +17,17 @@ It demonstrates how low-level logic (C) can be combined with web technologies us
 
 ---
 
-## ⚙️ Features
+## Features
 
-* 🚗 Park vehicle (auto slot allocation)
-* 🚪 Exit vehicle (slot reallocation from queue)
-* 📊 Queue management using FIFO
-* 💾 Persistent storage using text files
-* 🌐 Full-stack integration (Web + C backend)
+*  Park vehicle (auto slot allocation)
+*  Exit vehicle (slot reallocation from queue)
+*  Queue management using FIFO
+*  Persistent storage using text files
+*  Full-stack integration (Web + C backend)
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 Frontend (HTML/JS)
@@ -41,7 +41,7 @@ File System (slots.txt / queue.txt)
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 parking-slot-allocation/
@@ -68,9 +68,9 @@ parking-slot-allocation/
 
 ---
 
-## 🚀 How to Run Locally
+## How to Run Locally
 
-### 1️⃣ Compile C Program
+###  Compile C Program
 
 ```bash
 cd c_engine
@@ -79,7 +79,7 @@ gcc parking.c -o parking
 
 ---
 
-### 2️⃣ Start Backend Server
+### 2️ Start Backend Server
 
 ```bash
 cd backend
@@ -89,7 +89,7 @@ node server.js
 
 ---
 
-### 3️⃣ Run Frontend
+###  Run Frontend
 
 Open:
 
@@ -99,7 +99,7 @@ frontend/index.html
 
 ---
 
-## 🧪 Example Workflow
+## Example Workflow
 
 1. Enter vehicle number
 2. Click **Park** → Allocates slot
@@ -107,7 +107,7 @@ frontend/index.html
 
 ---
 
-## ⚠️ Important Notes
+## Important Notes
 
 * Do **not** upload compiled `.exe` file (compile locally)
 * Ensure correct file paths for C execution
@@ -115,7 +115,7 @@ frontend/index.html
 
 ---
 
-## 💡 Key Learning Outcomes
+##  Key Learning Outcomes
 
 * Integration of **low-level C logic with web applications**
 * Understanding **process execution using Node.js (child_process)**
@@ -124,12 +124,12 @@ frontend/index.html
 
 ---
 
-## 📸 (Optional)
+## (Optional)
 
 *Add screenshots or demo GIF here*
 
 ---
 
-## 📜 License
+## License
 
 This project is for educational purposes.
