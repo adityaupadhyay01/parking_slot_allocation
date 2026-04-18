@@ -194,5 +194,18 @@ Contributions are welcome!
 
 ## License
 
-This project is for **educational purposes**.
+**Copyright (c) 2026 Aditya**
+
+All rights reserved.
+
+This project is provided for **educational and demonstration purposes only**.
+
+You are NOT allowed to:
+- Copy and submit this project as your own
+- Use this project for commercial purposes
+- Redistribute or re-upload this project
+
+You are allowed to:
+- View and learn from the code
+  
 ---
