@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🅿️ Parking Slot Allocation System
+# Parking Slot Allocation System
 
 **A full-stack parking management system powered by C (DSA) + Node.js + Web**
 
@@ -14,7 +14,7 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 A **full-stack parking management system** that efficiently allocates parking slots using **Data Structures (Arrays & Queue)** implemented in **C**, bridged to a modern web interface via **Node.js**.
 
@@ -22,7 +22,7 @@ This project demonstrates how **low-level systems programming in C** can power a
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -33,17 +33,17 @@ This project demonstrates how **low-level systems programming in C** can power a
 
 ---
 
-## ✨ Features
+## Features
 
-- 🚗 **Park Vehicle** — Auto-allocates the next available slot
-- 🚪 **Exit Vehicle** — Frees the slot and reassigns it from the queue
-- 📋 **Queue Management** — FIFO-based waiting list when the lot is full
-- 💾 **Persistent Storage** — State saved across sessions via text files
-- 🌐 **Full-Stack Integration** — Web UI communicates with C engine through Node.js
+- **Park Vehicle** — Auto-allocates the next available slot
+- **Exit Vehicle** — Frees the slot and reassigns it from the queue
+- **Queue Management** — FIFO-based waiting list when the lot is full
+- **Persistent Storage** — State saved across sessions via text files
+- **Full-Stack Integration** — Web UI communicates with C engine through Node.js
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 ```
 Frontend (HTML/JS)
         │
@@ -61,7 +61,7 @@ The Node.js server acts as a **bridge**: it receives HTTP requests from the brow
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 ```
 parking-slot-allocation/
 │
@@ -87,7 +87,7 @@ parking-slot-allocation/
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -103,7 +103,7 @@ cd c_engine
 gcc parking.c -o parking
 ```
 
-> ⚠️ Do **not** commit the compiled binary. Add it to `.gitignore`.
+> Do **not** commit the compiled binary. Add it to `.gitignore`.
 
 ---
 
@@ -137,17 +137,17 @@ npx serve frontend
 
 ---
 
-## 📖 Example Workflow
+## Example Workflow
 ```
 1. Enter vehicle number  →  e.g., MH12AB1234
-2. Click [Park]          →  Slot S3 allocated ✅
+2. Click [Park]          →  Slot S3 allocated
 3. Lot is full           →  Next vehicle added to waiting queue
-4. Click [Exit] on S3    →  S3 freed, queued vehicle auto-assigned ✅
+4. Click [Exit] on S3    →  S3 freed, queued vehicle auto-assigned
 ```
 
 ---
 
-## 🛠️ Troubleshooting
+## Troubleshooting
 
 | Issue | Fix |
 |---|---|
@@ -158,7 +158,7 @@ npx serve frontend
 
 ---
 
-## 🎓 Key Learning Outcomes
+## Key Learning Outcomes
 
 - Integrating **low-level C logic** with modern web applications
 - Using **Node.js `child_process`** to execute native binaries from a server
@@ -168,7 +168,7 @@ npx serve frontend
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome!
 
@@ -180,13 +180,12 @@ Contributions are welcome!
 
 ---
 
-## 📄 License
-
-This project is for **educational purposes**.  
-Feel free to use, modify, and share with attribution.
+## Author
+LinkdIn:-
 
 ---
 
-<div align="center">
-Made with ❤️ to bridge low-level systems with the modern web
-</div>
+## License
+
+This project is for **educational purposes**.
+---
