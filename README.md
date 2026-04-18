@@ -178,12 +178,19 @@ Contributions are welcome!
 4. Push to the branch: `git push origin feature/your-feature`
 5. Open a Pull Request
 
----
-
 ## Author
-LinkdIn:-
 
----
+<div align="center">
+
+<a href="https://www.linkedin.com/in/aditya-upadhyay-in/">
+  <img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin" />
+</a>
+
+<a href="https://peerlist.io/adityaupadhyay">
+  <img src="https://img.shields.io/badge/Peerlist-View_Profile-black?style=for-the-badge" />
+</a>
+
+</div>
 
 ## License
 
